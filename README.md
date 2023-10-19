@@ -1,42 +1,53 @@
-## SQLite Lab
+# ETL-Query Lab: Data Processing with SQLite
 
-![4 17-etl-sqlite-RAW](https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d)
+This project focuses on the ETL (Extract, Transform, Load) process to handle datasets. The end goal is to extract a dataset from a URL, transform it for analysis, load it into an SQLite database, and then run SQL queries to retrieve insights from the processed data.
 
+## Overview:
 
+1. **Extraction (E):** Obtain a dataset from sources such as Kaggle or data.gov. Preferred formats are JSON or CSV.
+2. **Transformation (T):** Clean, filter, and enrich the data to make it suitable for analysis.
+3. **Loading (L):** Load the transformed data into an SQLite database table using Python's `sqlite3` module.
+4. **Query (Q):** Perform SQL queries on the SQLite database to analyze the data and gain insights.
 
-### Lab:
+## Tasks:
 
-* Use an AI Assistant, but use a different one then you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
-* ETL-Query:  [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query
-For the ETL-Query lab:
-* [E] Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well.
-* [T] Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
-* [L] Load the transformed data into a SQLite database table using Python's sqlite3 module.
-* [Q] Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
+- Fork the provided project and set it up to run.
+- Optimize the query to ensure it doesn't merely print a massive output on the screen.
+- Convert `main.py` into a command-line tool, allowing each ETL step to be executed independently.
+- Select and process a new dataset of your choice, following the same ETL steps.
+- Ensure your project adheres to coding standards and passes all lint/tests. Aim for a built badge for credibility.
+- Document your project structure with an architectural diagram.
 
-#### Tasks:
+## Reflection:
 
-* Fork this project and get it to run
-* Make the query more useful and not a giant mess that prints to screen
-* Convert the main.py into a command-line tool that lets you run each step independantly
-* Fork this project and do the same thing for a new dataset you choose
-* Make sure your project passes lint/tests and has a built badge
-* Include an architectural diagram showing how the project works
+Upon completing the lab, reflect on the following:
 
-#### Reflection Questions
+1. Challenges faced during the ETL process and the strategies you employed to overcome them.
+2. Insights or knowledge gained from querying the SQLite database.
+3. The efficiency of SQLite and SQL in data analysis, and their limitations.
+4. Feedback on the AI assistant utilized and how it compares to others you've tried in terms of strengths and weaknesses.
+5. Recommendations or improvements for this lab. What additional datasets might be interesting to analyze?
 
-* What challenges did you face when extracting, transforming, and loading the data? How did you overcome them?
-* What insights or new knowledge did you gain from querying the SQLite database?
-* How can SQLite and SQL help make data analysis more efficient? What are the limitations?
-* What AI assistant did you use and how did it compare to others you've tried? What are its strengths and weaknesses?
-* If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?
+## Challenge Exercises (Optional):
 
-##### Challenge Exercises
+1. Enhance the transformation phase by joining the data with another dataset, aggregating by specific categories, or normalizing columns.
+2. Identify and display correlated fields in the data using SQL queries.
+3. Create a secondary table in the SQLite database and demonstrate a join operation between the two tables.
+4. Implement a Flask web application that executes queries upon request and showcases the results.
+5. Containerize the application with Docker for better portability.
 
-* Add more transformations to the data before loading it into SQLite. Ideas: join with another dataset, aggregate by categories, normalize columns.
-* Write a query to find correlated fields in the data. Print the query results nicely formatted.
-* Create a second table in the SQLite database and write a join query with the two tables.
-* Build a simple Flask web app that runs queries on demand and displays results.
-* Containerize the application using Docker so the database and queries can be portable
+## Requirements:
 
+- Python
+- SQLite
+- Recommended AI Assistant (other than those previously used, such as Anthropic's Claud, Bard, Copilot, CodeWhisperer, etc.)
 
+## Getting Started:
+
+To get started with this project:
+
+1. Clone the repository to your local machine.
+2. Install the required dependencies.
+3. Navigate to the project directory and execute the desired operations using the command-line tool.
+
+Happy Data Processing!
